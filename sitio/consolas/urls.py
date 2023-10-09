@@ -18,5 +18,5 @@ from django.urls import path, include
 from consolas import views
 
 urlpatterns = [
-
+    path(),
 ]
