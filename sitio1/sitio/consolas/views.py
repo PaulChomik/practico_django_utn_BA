@@ -30,3 +30,8 @@ def logout(request):
     params = {}
     params['nombre_sitio'] = 'consolas'
     return render(request, 'logout.html', params)
+def preview(request):
+    params = {}
+    params['nombre_sitio'] = 'consolas'
+    return render(request, 'preview.html', params)
+

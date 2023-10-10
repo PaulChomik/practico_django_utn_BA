@@ -21,9 +21,9 @@
             <img src="{% static 'media/img_avatar1.png' %}" alt="Perfil" style="width:40px;height: 40px;" class="rounded-pill">
           </a>
         </div>
-          <li class="nav-item">  <a class="nav-link" href="">Registrarse</a></li>
-          <li class="nav-item">  <a class="nav-link " href="">Ingresar</a></li>
-          <li class="nav-item">  <a class="nav-link " href="">INICIO</a></li>
+          <li class="nav-item">  <a class="nav-link" href="{% url 'login' %}">Registrarse</a></li>
+          <li class="nav-item">  <a class="nav-link " href="{% url 'logout' %}">Ingresar</a></li>
+          <li class="nav-item">  <a class="nav-link " href="{% url 'index' %}">INICIO</a></li>
         {% endif %}    
 
      </ul>
