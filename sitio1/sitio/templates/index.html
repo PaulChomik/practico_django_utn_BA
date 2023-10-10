@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!-- Producto 1-->
+
+<div class="row">
+    <div class="col-sm-8" style="background-color:hsl(0, 100%, 90%);">
+
+            <div class="container p-5 my-5">
+                   <!-- Nombre del aparatoe-->
+                    <p class="text-alingh:center">
+                        Ark-1-
+                    </p>
+                    <!-- movie trailer from you tube-->
+                <div class="embed-responsive embed-responsive-1by1">
+                    <img src="{% static 'media/ark1.png' %}" alt="">
+                </div>
+            </div>
+
+
+
+
+
+            <div>
+                <div class="container p-5 my-5 bg-primary text-white">
+                    <h1>DESCRIPCION</h1>
+                    <p>El dispositivo cuenta con las siguientes caracteristicas:</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <button type="button" name="button" class="btn btn-secondary" href="{% url 'register' %}"> Comprar</button>
+                  <p> Para comprar debe registrarse y/o loggearse</p>
+            </div>
+    </div>
+
+</div>
+
+
+<!-- Producto 2-->
+<div class="row">
+    <div class="col-sm-8" style="background-color:hsl(0, 100%, 90%);">
+
+            <div class="container p-5 my-5">
+                   <!-- Nombre del aparatoe-->
+                    <p class="text-alingh:center">
+                        Ark-2-
+                    </p>
+                    <!-- movie trailer from you tube-->
+                <div class="embed-responsive embed-responsive-1by1">
+                    <img src="{% static 'media/ark2.png' %}" alt="">
+                </div>
+            </div>
+
+            <div>
+                <div class="container p-5 my-5 bg-primary text-white">
+                    <h1>DESCRIPCION</h1>
+                    <p>El dispositivo cuenta con las siguientes caracteristicas:</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <button type="button" name="button" class="btn btn-secondary" href="{% url 'register' %}"> Comprar</button>
+                  <p> Para comprar debe registrarse y/o loggearse</p>
+            </div>
+    </div>
+
+</div>
+
+<!-- Producto 3-->
+<div class="row">
+    <div class="col-sm-8" style="background-color:hsl(0, 100%, 90%);">
+
+            <div class="container p-5 my-5">
+                   <!-- Nombre del aparatoe-->
+                    <p class="text-alingh:center">
+                        Ark-3-
+                    </p>
+                    <!-- movie trailer from you tube-->
+                <div class="embed-responsive embed-responsive-1by1">
+                    <img src="{% static 'media/ark3_front.png' %}" alt="">
+                    <img src="{% static 'media/ark3_box.png' %}" alt="">
+                </div>
+            </div>
+
+            <div>
+                <div class="container p-5 my-5 bg-primary text-white">
+                    <h1>DESCRIPCION</h1>
+                    <p>El dispositivo cuenta con las siguientes caracteristicas:</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <button type="button" name="button" class="btn btn-secondary" href="{% url 'register' %}"> Comprar</button>
+                  <p> Para comprar debe registrarse y/o loggearse</p>
+            </div>
+    </div>
+
+
+</div>
+
+
+{% endblock %}

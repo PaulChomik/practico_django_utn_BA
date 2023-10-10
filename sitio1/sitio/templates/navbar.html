@@ -1,0 +1,31 @@
+{% load static %}
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+
+        <li>
+          <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#demo">☰</button>
+       </li>
+
+        
+        {% if request.user.is_authenticated %}
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'media/img_avatar1.png' %}" alt="img_avatar1.png" style="width:40px;height: 40px;" class="rounded-pill">
+          </a>
+      </div>
+          <li class="nav-item">  <a class="nav-link active" href="#">{{ user.username }}</a>  </li>
+          <li class="nav-item">  <a class="nav-link" href="">Salir</a> </li>
+        {% else %}
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'media/img_avatar1.png' %}" alt="Perfil" style="width:40px;height: 40px;" class="rounded-pill">
+          </a>
+        </div>
+          <li class="nav-item">  <a class="nav-link" href="">Registrarse</a></li>
+          <li class="nav-item">  <a class="nav-link " href="">Ingresar</a></li>
+          <li class="nav-item">  <a class="nav-link " href="">INICIO</a></li>
+        {% endif %}    
+
+     </ul>
+
+  </nav>

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../media"
+		},
+		{
+			"path": "../sitio"
+		},
+		{
+			"path": "../static"
+		},
+		{
+			"path": "../static_dev"
+		},
+		{
+			"path": "../templates"
+		}
+	]
+}
